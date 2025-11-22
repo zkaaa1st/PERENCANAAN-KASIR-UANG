@@ -1,0 +1,125 @@
+<html lang="id"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Perencanaan Keuangan </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Aplikasi Perencanaan Keuangan</h1>
+    <p class="lead">PEMASUKAN DAN PENGELUARAN INCOME DAN OUTCOME </p>
+  </header>
+
+  <main class="container">
+    <section class="summary" aria-live="polite">
+      <div class="card">
+        <center><h2>PERENCANAAN KEUANGAN</h2></center>
+        <div class="totals">
+          <div class="total-block">
+            <div class="label">Income</div>
+            <div id="total-income" class="value">Rp&nbsp;0</div>
+          </div>
+          <div class="total-block">
+            <div class="label">Outcome</div>
+            <div id="total-outcome" class="value">Rp&nbsp;0</div>
+          </div>
+          <div class="total-block balance">
+            <div class="label">Uang</div>
+            <div id="balance" class="value" style="color: var(--success);">Rp&nbsp;0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="forms">
+      <div class="card">
+        <h2>Pemasukan (Income)</h2>
+        <form id="income-form" class="form">
+          <label>
+            Kategori Pemasukan
+            <select name="category" required="">
+              <option value="1"> Pendapatan dari Pekerjaan Utama</option>
+              <option value="2">Pendapatan dari Usaha Sendiri/Wirausaha</option>
+              <option value="3">Pendapatan Pasif dan Investasi</option>
+              <option value="4">Dana Pensiun dan Jaminan Sosial</option>
+            </select>
+          </label>
+
+          <label>
+            Jumlah nominal (angka)
+            <input name="amount" type="number" min="0" step="1" required="">
+          </label>
+
+          <label>
+            Keterangan
+            <input name="description" type="text" placeholder="">
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Tambah Income</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Pengeluaran (Outcome)</h2>
+        <form id="outcome-form" class="form">
+          <label>
+            Kategori Pengeluaran
+            <select name="category" required="">
+              <option value="1">Makanan & Kebutuhan Sehari-hari</option>
+              <option value="2">Transportasi </option>
+              <option value="3">Uang Jajan Anak</option>
+              <option value="4">Pendidikan & Perawatan Anak</option>
+              <option value="5">Tabungan & Investasi </option>
+            </select>
+          </label>
+
+          <label>
+            Jumlah nominal (angka)
+            <input name="amount" type="number" min="0" step="1" required="">
+          </label>
+
+          <label>
+            Keterangan
+            <input name="description" type="text" placeholder="">
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn danger">Tambah Outcome</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="lists">
+      <div class="card">
+        <h2>Income</h2>
+        <ul id="income-list" class="list" aria-live="polite"><li class="empty">Belum ada pemasukan</li></ul>
+      </div>
+
+      <div class="card">
+        <h2>Daftar Outcome</h2>
+        <ul id="outcome-list" class="list" aria-live="polite"><li class="empty">Belum ada pengeluaran</li></ul>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="seed-data" class="btn">Isi Data Contoh</button>
+      <button id="clear-data" class="btn">Hapus Semua Data</button>
+      <button id="export-excel" class="btn primary">Ekspor Excel</button>
+      <label for="import-excel" class="btn">
+        Impor Excel
+        <input type="file" id="import-excel" accept=".xlsx, .xls" hidden="">
+      </label>
+    </section>
+
+
+    
+  </main>
+
+  <script src="xlsx.full.min.js"></script>
+  <script type="module" src="app.js"></script>
+
+
+</body></html>
