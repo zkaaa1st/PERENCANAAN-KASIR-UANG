@@ -101,13 +101,10 @@ export class FinanceManager {
 
   seedSampleData() {
     this.clearAll();
-    this.addIncome(new Income({ category: 'gaji bulanan', amount: 8000000, description: 'Gaji perusahaan ABC', date: '2025-11-01' }));
-    this.addIncome(new Income({ category: 'freelance', amount: 1500000, description: 'Project website', date: '2025-11-05' }));
-    this.addIncome(new Income({ category: 'lainnya', amount: 300000, description: 'Penjualan barang bekas', date: '2025-11-06' }));
+    this.addIncome(new Income({ category: 'Gaji bulanan', amount: 100000000, description: 'Gaji perusahaan Tambang', date: '2025-11-01' }));
 
-    this.addOutcome(new Outcome({ category: 'belanja bulanan', amount: 2000000, description: 'Belanja pasar bulan Nov', date: '2025-11-02' }));
-    this.addOutcome(new Outcome({ category: 'operasional kantor', amount: 750000, description: 'ATK dan listrik', date: '2025-11-03' }));
-    this.addOutcome(new Outcome({ category: 'hiburan mingguan', amount: 250000, description: 'Nonton & makan', date: '2025-11-08' }));
-    this.addOutcome(new Outcome({ category: 'biaya tak terduga', amount: 500000, description: 'Service motor', date: '2025-11-07' }));
+
+    this.addOutcome(new Outcome({ category: 'Makanan & Kebutuhan Sehari-hari', amount: 15000000, description: 'Cemilan & bayar listrik', date: '2025-10-23' }));
+   
   }
 }
