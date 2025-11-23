@@ -1,10 +1,10 @@
 :root{
-  --bg:#00ffe5;
-  --card:#00ddff;
-  --muted:#6b7280;
-  --accent:#142b5b;
+  --bg:#001eff;
+  --card:#fff6f6ce;
+  --muted:#ffffff;
+  --accent:#ffffff;
   --danger:#57eb01;
-  --success:#16a34a;
+  --success:#0bb649;
   --radius:12px;
   --shadow: 0 6px 18px rgba(15,23,42,0.08);
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
@@ -15,7 +15,7 @@ html,body{height:100%}
 body{
   margin:0;
   background:var(--bg);
-  color:#092e85;
+  color:#ffffff;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.4;
@@ -53,11 +53,11 @@ body{
 .total-block{
   padding:12px;
   border-radius:10px;
-  background:#fbfdff;
+  background:#80c9ee;
   min-width:180px;
   flex:1;
 }
-.total-block.balance{background:#eefbf2}
+.total-block.balance{background:#ff0000}
 .total-block .label{font-size:0.85rem;color:var(--muted)}
 .total-block .value{font-size:1.25rem;font-weight:700;margin-top:6px}
 
