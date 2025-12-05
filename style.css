@@ -1,12 +1,14 @@
 :root{
-  --bg:#00ffe5;
-  --card:#000000ce;
+ background-image: linear-gradient(to right, rgb(135, 133, 133), rgb(99, 99, 99), rgb(49, 49, 49));
+  .card {
+  background-image: linear-gradient(to right, rgb(159, 159, 159) , rgb(255, 255, 255) , rgb(0, 0, 0));  
+  }
   --muted:#ffffff;
   --accent:#ffffff;
   --danger:#57eb01;
   --success:#0bb649;
   --radius:12px;
-  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --shadow: 0 6px 20px rgb(255, 255, 255);
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
@@ -15,7 +17,7 @@ html,body{height:100%}
 body{
   margin:0;
   background:var(--bg);
-  color:#ffffff;
+  color:#000000;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.4;
@@ -90,3 +92,4 @@ body{
 @media (max-width:900px){
   .forms,.lists{grid-template-columns:1fr}
 }
+
