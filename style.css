@@ -1,5 +1,5 @@
 :root{
- background-image: linear-gradient(to right, rgb(135, 133, 133), rgb(99, 99, 99), rgb(49, 49, 49));
+ background-image: linear-gradient(to left, rgb(135, 133, 133), rgb(99, 99, 99), rgb(49, 49, 49));
   .card {
   background-image: linear-gradient(to right, rgb(159, 159, 159) , rgb(255, 255, 255) , rgb(0, 0, 0));  
   }
